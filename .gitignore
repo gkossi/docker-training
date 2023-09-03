@@ -1,0 +1,6 @@
+HELP.md
+
+### Directories ###
+.git
+docker-installation/.vagrant/
+docker-installation/*./
