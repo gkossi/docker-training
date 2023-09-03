@@ -9,9 +9,13 @@
 
 -----------------------------------------------
 Session  : Bootcamp DevOps N°15 de Eazytraining
+
 Period   : Septembre à Octobre
+
 Nom      : GBENOU
+
 Prénoms  : Kossi
+
 LinkedIn : https://www.linkedin.com/in/gkossi/
 -----------------------------------------------
 
