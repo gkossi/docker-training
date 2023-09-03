@@ -1,13 +1,4 @@
-# TP-1 : Installation et Test de Docker
-- Installation de Docker sur Centos
-- Tache de post Installation
-- Vérification de l'Installation
-- Utiliser la documentation Docker afin d'etre à jour
-- Lancement de votre premier coteneur (nginx)
-- Réaliser la meme tache sur la plateforme de Labs
-- Utilisation des variables d'environnement
-
------------------------------------------------
+# Infos sur le réalisateur
 Session  : Bootcamp DevOps N°15 de Eazytraining
 
 Period   : Septembre à Octobre
@@ -17,7 +8,15 @@ Nom      : GBENOU
 Prénoms  : Kossi
 
 LinkedIn : https://www.linkedin.com/in/gkossi/
------------------------------------------------
+
+# TP-1 : Installation et Test de Docker
+- Installation de Docker sur Centos
+- Tache de post Installation
+- Vérification de l'Installation
+- Utiliser la documentation Docker afin d'etre à jour
+- Lancement de votre premier coteneur (nginx)
+- Réaliser la meme tache sur la plateforme de Labs
+- Utilisation des variables d'environnement
 
 ## TAF
 Ici dans ce TP, j'ai pour mission de mettre en place un environnement servant de travaux avec Docker.
