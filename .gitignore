@@ -2,5 +2,7 @@ HELP.md
 
 ### Directories ###
 .git
-docker-installation/.vagrant/
-docker-installation/*./
+install-docs/docker-installation-centos/.vagrant/
+install-docs/docker-installation-centos/*./
+install-docs/docker-installation-ubuntu/.vagrant/
+install-docs/docker-installation-ubuntu/*./

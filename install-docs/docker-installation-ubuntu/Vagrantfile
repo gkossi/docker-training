@@ -1,0 +1,32 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+# To enable zsh, please set ENABLE_ZSH env var to "true" before launching vagrant up 
+#   + On windows => $env:ENABLE_ZSH="true"
+#   + On Linux  => export ENABLE_ZSH="true"
+
+# Définition des variables
+RAM = 2048
+CPU = 2
+IP = "192.168.99.21"
+TYPE = "static"
+NAME = "dockerubuntu"
+
+Vagrant.configure("2") do |config|
+  config.vm.define "dockerubuntu" do |dockerubuntu|
+    dockerubuntu.vm.box = "generic/ubuntu1804"
+	dockerubuntu.vm.box_download_insecure=true
+    dockerubuntu.vm.network "private_network", type: TYPE, ip: IP
+    dockerubuntu.vm.hostname = NAME
+	
+    dockerubuntu.vm.provider "virtualbox" do |v|
+      v.name = NAME
+      v.memory = RAM
+      v.cpus = CPU
+    end
+	
+    dockerubuntu.vm.provision :shell do |shell|
+      shell.path = "install_dockerubuntu.sh"
+      shell.env = { 'ENABLE_ZSH' => ENV['ENABLE_ZSH'] }
+    end
+  end
+end
