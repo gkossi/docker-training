@@ -50,12 +50,12 @@ Notre fichier Dockerfile doit contenir les instructions suivantes :
 - Installer le serveur web nginx et l'outil git : RUN DEBIAN_FRONTEND=noninteractive apt-get install -y nginx git
 - Supprimer le contenu du répertoire /var/www/html/ s'il en contient : RUN rm -Rf /var/www/html/*
 - Cloner le projet qui va servir à builder l'image : RUN git clone https://github.com/gkossi/static-website-example.git /var/www/html/
-- Exposer sur le port 80 : EXPOSE 80
+- Exposer sur le port 8085 : EXPOSE 8085
 - Définir les commandes à lancer au démarrage du conteneur : ENTRYPOINT ["/usr/sbin/nginx", "-g", "daemon off;"]
 
 ## QUELQUES INDICATIONS SUR LE BUILD DE L'IMAGE ET SON UTILISATION
 - On va builder l'image : docker build -t webapp:v1 .
-- Ensuite, on va tester l'image : docker run -d --name webapp -p 80:80 webapp:v1
+- Ensuite, on va tester l'image : docker run -d --name webapp -p 8085:8085 webapp:v1
 - Ensuite, il faut tester si l'image est fonctionnelle en accédant au site static déployé
 - Changer le tag de notre image : docker tag fd6b66f8789b gkossi/webapp:v1
 - Après avoir testé l'image Docker, on va maintenant l'envoyer sur notre registry sur dockerhub :
