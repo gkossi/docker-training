@@ -9,5 +9,6 @@ RUN rm -Rf /var/www/html/*
 RUN git clone https://github.com/gkossi/static-website-example.git /var/www/html/
 #ADD static-website-example/ /var/www/html/
 EXPOSE 8085
-ENTRYPOINT ["/usr/sbin/nginx", "-g", "daemon off;"]
-#CMD [“nginx”, “-g”, “daemon off;”]
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
+#ENTRYPOINT ["/usr/sbin/nginx", "-g", "daemon off;"]
+#CMD ["nginx", "-g", "daemon off;"]
