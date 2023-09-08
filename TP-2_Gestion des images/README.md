@@ -50,7 +50,7 @@ Notre fichier Dockerfile doit contenir les instructions suivantes :
 - Installer le serveur web nginx et l'outil git : RUN DEBIAN_FRONTEND=noninteractive apt-get install -y nginx git
 - Supprimer le contenu du répertoire /var/www/html/ s'il en contient : RUN rm -Rf /var/www/html/*
 - Cloner le projet qui va servir à builder l'image : RUN git clone https://github.com/gkossi/static-website-example.git /var/www/html/
-- Exposer sur le port 80 : EXPOSE 80
+- Exposer sur le port 8085 : EXPOSE 8085
 - Définir les commandes à lancer au démarrage du conteneur : ENTRYPOINT ["/usr/sbin/nginx", "-g", "daemon off;"]
 
 ## QUELQUES INDICATIONS SUR LE BUILD DE L'IMAGE ET SON UTILISATION

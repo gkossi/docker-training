@@ -12,3 +12,4 @@ EXPOSE 8085
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
 #ENTRYPOINT ["/usr/sbin/nginx", "-g", "daemon off;"]
 #CMD ["nginx", "-g", "daemon off;"]
+
