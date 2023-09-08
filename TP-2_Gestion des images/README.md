@@ -55,7 +55,7 @@ Notre fichier Dockerfile doit contenir les instructions suivantes :
 
 ## QUELQUES INDICATIONS SUR LE BUILD DE L'IMAGE ET SON UTILISATION
 - On va builder l'image : docker build -t webapp:v1 .
-- Ensuite, on va tester l'image : docker run -d --name webapp -p 80:80 webapp:v1
+- Ensuite, on va tester l'image : docker run -d --name webapp -p 8085:8085 webapp:v1
 - Ensuite, il faut tester si l'image est fonctionnelle en accédant au site static déployé
 - Changer le tag de notre image : docker tag fd6b66f8789b gkossi/webapp:v1
 - Après avoir testé l'image Docker, on va maintenant l'envoyer sur notre registry sur dockerhub :
