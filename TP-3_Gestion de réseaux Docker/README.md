@@ -21,11 +21,11 @@ docker network create --diver=bridge --subnet=192.168.10.0/24 ggs-net
 
 - Création du 1er conteneur :
 
-docker run -itd --name ubuntu1 ubuntu /bin/bash
+docker run -itd --name ubuntu1 --network ggs-net ubuntu /bin/bash
 
 - Création du 2è conteneur :
 
-docker run -itd --name ubuntu2 ubuntu /bin/bash
+docker run -itd --name ubuntu2 --network ggs-net ubuntu /bin/bash
 
 - Se connecter au 1er conteneur et ping le 2è conteneur :
 
