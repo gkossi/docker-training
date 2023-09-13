@@ -21,6 +21,7 @@ LinkedIn : https://www.linkedin.com/in/gkossi/
 ## TAF
 
 ###☺ ***INSTALLATION DES OUTILS : DOCKER ENGINE ET DOCKER-COMPOSE***
+
 On va procéder à l'installation sur Linux (Centos 7.9) :
 
 - On va installer docker engine et docker compose : 
@@ -48,24 +49,27 @@ sudo systemctl enable docker
 sudo systemctl start docker
 
 ###☺ ***CONFIGURATION DE DOCKER COMPOSE POUR ODOO : FICHIER DOCKER-COMPOSE.YML***
+
 Ici, nous allons configurer le fichier docker-compose.yml en nous basant sur la documentation de docker pour odoo accessible l'adresse suivante : https://hub.docker.com/_/odoo
 
 Ci-dessous un aperçu du fichier docker-compose.yml :
 
-![](images/docker-compose.jpeg)
+![](images/docker-compose.jpg)
 
 
 ###☺ ***UTILISATION DU FICHIER DOCKER-COMPOSE.YML POUR PROVISIONNER LES CONTENEURS***
+
 Après configuration du fichier docker-compose.yml, on va ensuite lancer docker compose :
 
 docker compose up -d
 
 On obtient le résultat ci-dessous :
 
-![](images/docker-compose-up.jpeg)
+![](images/docker-compose-up.jpg)
 
 
 ###☺ ***VERIFICATIONS***
+
 Après provisionnement des conteneurs avec docker-compose, on peut procéder à des vérifications comme suit :
 
 - On va vérifier les logs pour voir s'il y a pas eu d'erreur :
@@ -74,15 +78,15 @@ docker compose logs
 
 On obtient le résultat ci-dessous :
 
-![](images/logs.jpeg)
+![](images/logs.jpg)
 
-- On va vérifier si les conteneurs ** Web ** et ** db ** sont bien créés et en cours d'exécution :
+- On va vérifier si les conteneurs ***Web*** et ***db*** sont bien créés et en cours d'exécution :
 
 docker compose ps
 
 On obtient le résultat ci-dessous :
 
-![](images/conteneurs.jpeg)
+![](images/conteneurs.jpg)
 
 - On va vérifier si notre application Odoo déployée est fonctionnelle et accessible :
 
