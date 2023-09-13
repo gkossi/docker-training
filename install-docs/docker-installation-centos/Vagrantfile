@@ -9,22 +9,22 @@ RAM = 2048
 CPU = 2
 IP = "192.168.99.20"
 TYPE = "static"
-NAME = "docker"
+NAME = "dockercentos"
 
 Vagrant.configure("2") do |config|
-  config.vm.define "docker" do |docker|
-    docker.vm.box = "geerlingguy/centos7"
-    docker.vm.network "private_network", type: TYPE, ip: IP
-    docker.vm.hostname = NAME
+  config.vm.define "dockercentos" do |dockercentos|
+    dockercentos.vm.box = "geerlingguy/centos7"
+    dockercentos.vm.network "private_network", type: TYPE, ip: IP
+    dockercentos.vm.hostname = NAME
 	
-    docker.vm.provider "virtualbox" do |v|
+    dockercentos.vm.provider "virtualbox" do |v|
       v.name = NAME
       v.memory = RAM
       v.cpus = CPU
     end
 	
-    docker.vm.provision :shell do |shell|
-      shell.path = "install_docker.sh"
+    dockercentos.vm.provision :shell do |shell|
+      shell.path = "install_dockercentos.sh"
       shell.env = { 'ENABLE_ZSH' => ENV['ENABLE_ZSH'] }
     end
   end
