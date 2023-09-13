@@ -20,7 +20,7 @@ LinkedIn : https://www.linkedin.com/in/gkossi/
 
 ## TAF
 
-###☺ ***INSTALLATION DES OUTILS : DOCKER ENGINE ET DOCKER-COMPOSE***
+### ***INSTALLATION DES OUTILS : DOCKER ENGINE ET DOCKER-COMPOSE***
 
 On va procéder à l'installation sur Linux (Centos 7.9) :
 
@@ -48,7 +48,7 @@ sudo systemctl enable docker
 
 sudo systemctl start docker
 
-###☺ ***CONFIGURATION DE DOCKER COMPOSE POUR ODOO : FICHIER DOCKER-COMPOSE.YML***
+### ***CONFIGURATION DE DOCKER COMPOSE POUR ODOO : FICHIER DOCKER-COMPOSE.YML***
 
 Ici, nous allons configurer le fichier docker-compose.yml en nous basant sur la documentation de docker pour odoo accessible l'adresse suivante : https://hub.docker.com/_/odoo
 
@@ -57,7 +57,7 @@ Ci-dessous un aperçu du fichier docker-compose.yml :
 ![](images/docker-compose.jpg)
 
 
-###☺ ***UTILISATION DU FICHIER DOCKER-COMPOSE.YML POUR PROVISIONNER LES CONTENEURS***
+### ***UTILISATION DU FICHIER DOCKER-COMPOSE.YML POUR PROVISIONNER LES CONTENEURS***
 
 Après configuration du fichier docker-compose.yml, on va ensuite lancer docker compose :
 
@@ -68,7 +68,7 @@ On obtient le résultat ci-dessous :
 ![](images/docker-compose-up.jpg)
 
 
-###☺ ***VERIFICATIONS***
+### ***VERIFICATIONS***
 
 Après provisionnement des conteneurs avec docker-compose, on peut procéder à des vérifications comme suit :
 
